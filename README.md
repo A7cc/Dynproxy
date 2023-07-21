@@ -13,7 +13,12 @@
 - 编译
 
 ```bash
-go build -ldflags="-s -w" -trimpath  .
+# windows
+go build -o Dynproxy_winodws_amd64.exe -ldflags="-s -w" -trimpath  .
+# linux
+go build -o Dynproxy_linux_amd64 -ldflags="-s -w" -trimpath  .
+# macOS
+go build -o Dynproxy_darwin_amd64 -ldflags="-s -w" -trimpath  .
 ```
 
 - 帮助`-h`
